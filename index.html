@@ -160,7 +160,7 @@
                 <h3>Garage & Utility</h3>
                 <ul>
                     <li>Full-size garage for mountain bikes</li>
-                    <li>Built-in high capacity air compressor</li>
+                    <li>Built-in high capacity air compressorCAPABLE OF REFILLING VAN TIRES AFTER AIRDOWN</li>
                     <li>Lightweight aluminum Unistrut roof rack</li>
                     <li>Perimeter lighting with interior controls</li>
                 </ul>
@@ -168,16 +168,34 @@
         </div>
 
         <div class="price-section">
-            <h2>Price: $[Your Price]</h2>
-            <p>Location: [Your Location]</p>
+            <h2>Price: $[79,000]</h2>
+            <p>Location: [NEVADA CITY,CA]</p>
         </div>
 
         <div class="contact-section">
             <h2>Interested? Get in Touch!</h2>
-            <p>Email: [your@email.com]</p>
-            <p>Phone: [your phone number]</p>
+            <p>Email: [SIERRASWEETS1@GMAIL.com]</p>
+            <p>Phone: [530-725-7961 OR 530-559-4589]</p>
             <button onclick="window.location.href='mailto:[your@email.com]'">Send Email</button>
+            
+        </div>class="qr-section">
+                <h3>Scan to view this listing</h3>
+                <div id="qr-code"></div>
+            </div>
         </div>
+
+        <!-- Add QR Code library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script>
+            // Create QR Code once the page loads
+            window.onload = function() {
+                new QRCode(document.getElementById("qr-code"), {
+                    text: window.location.href,
+                    width: 128,
+                    height: 128,
+                    colorDark : "#2c3e50",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
     </div>
 </body>
 </html>
