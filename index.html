@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camper Van For Sale</title>
+    <style>
+        /* Modern, clean styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .price-section {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        button {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #219a52;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beautiful Camper Van For Sale</h1>
+        <p>Your perfect home on wheels awaits!</p>
+    </header>
+
+    <div class="container">
+        <div class="photo-gallery">
+            <!-- Replace these with your actual camper van photos -->
+            <img src="/api/placeholder/600/400" alt="Camper van exterior">
+            <img src="/api/placeholder/600/400" alt="Camper van interior">
+            <img src="/api/placeholder/600/400" alt="Kitchen area">
+        </div>
+
+        <h2>About This Van</h2>
+        <p>2010 Mercedes Sprinter Extended (Dual Wheel 1-ton) with professional full camper conversion. This meticulously built van features premium components throughout, from its marine-grade water heater to its sophisticated electrical system. With only 70k miles, this turnkey adventure vehicle combines luxury comfort with practical functionality.</p>
+        
+        <p>The thoughtfully designed layout includes a queen-size bed platform, dual couches with seating for 4, and a pull-down table. The professional kitchen features a full-size stainless steel sink, butcher block counter, oven, and 4-burner stove. The van's garage area accommodates mountain bikes and includes a built-in air compressor for your adventures.</p>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>Specifications</h3>
+                <ul>
+                    <li>Year: [Year]</li>
+                    <li>Make: [Make]</li>
+                    <li>Model: [Model]</li>
+                    <li>Mileage: [Mileage]</li>
+                    <li>Engine: [Engine specs]</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Living Space</h3>
+                <ul>
+                    <li>Sleeping capacity: [Number]</li>
+                    <li>Kitchen setup: [Details]</li>
+                    <li>Storage space: [Details]</li>
+                    <li>Bathroom: [Yes/No, Details]</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Electrical System</h3>
+                <ul>
+                    <li>2000W inverter with professional wiring</li>
+                    <li>280Ah LiFePO4 battery system</li>
+                    <li>Solar power system</li>
+                    <li>Dual sub-panel AC/DC distribution</li>
+                    <li>Blue Sea auto charging relay with cockpit controls</li>
+                    <li>Full DC/USB power distribution</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h3>Comfort & Climate</h3>
+                <ul>
+                    <li>Espar D4 diesel heater (20°F to 60°F in 10 min)</li>
+                    <li>Marine-grade electric/DC water heater</li>
+                    <li>Hot & cold exterior shower</li>
+                    <li>Interior fans with thermal control</li>
+                    <li>Premium window insulation with fold-up covers</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h3>Entertainment & Audio</h3>
+                <ul>
+                    <li>High-powered stereo system</li>
+                    <li>6 high-end speakers throughout</li>
+                    <li>2000W subwoofer</li>
+                    <li>Isolated power system from starter</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h3>Garage & Utility</h3>
+                <ul>
+                    <li>Full-size garage for mountain bikes</li>
+                    <li>Built-in high capacity air compressor</li>
+                    <li>Lightweight aluminum Unistrut roof rack</li>
+                    <li>Perimeter lighting with interior controls</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="price-section">
+            <h2>Price: $[Your Price]</h2>
+            <p>Location: [Your Location]</p>
+        </div>
+
+        <div class="contact-section">
+            <h2>Interested? Get in Touch!</h2>
+            <p>Email: [your@email.com]</p>
+            <p>Phone: [your phone number]</p>
+            <button onclick="window.location.href='mailto:[your@email.com]'">Send Email</button>
+        </div>
+    </div>
+</body>
+</html>
