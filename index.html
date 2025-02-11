@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camper Van For Sale</title>
+    <title>2010 Mercedes Sprinter Camper Van For Sale</title>
     <style>
-        /* Modern, clean styling */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -30,8 +29,9 @@
         .photo-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
+            gap: 1.5rem;
             margin: 2rem 0;
+            padding: 0 1rem;
         }
 
         .photo-gallery img {
@@ -39,6 +39,13 @@
             height: 300px;
             object-fit: cover;
             border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .photo-gallery img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
 
         .features {
@@ -83,102 +90,164 @@
         button:hover {
             background: #219a52;
         }
+
+        .build-highlights {
+            padding: 2rem;
+            background: #f8f9fa;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .highlight-item {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .highlight-item h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .qr-section {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        #qr-code {
+            display: inline-block;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 1rem;
+        }
+
+        #qr-code img {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Beautiful Camper Van For Sale</h1>
-        <p>Your perfect home on wheels awaits!</p>
+        <h1>2010 Mercedes Sprinter Camper Van</h1>
+        <p>Professional Build - Adventure Ready</p>
     </header>
 
     <div class="container">
         <div class="photo-gallery">
-            <!-- Replace these with your actual camper van photos -->
-            <img src="/https://github.com/prm95959/Sprinter-Van-for-sale/blob/main/images/van%20fall.jpg" alt="Camper van exterior">
-            <img src="/api/placeholder/600/400" alt="Camper van interior">
-            <img src="/api/placeholder/600/400" alt="Kitchen area">
+            <!-- Exterior Views -->
+            <img src="images/vanwhitney.jpg" alt="Van against Mt. Whitney backdrop">
+            <img src="images/vansea.jpg" alt="Van by the ocean">
+            <img src="images/vanpalms.jpg" alt="Van parked under palm trees">
+            <img src="images/van1.jpg" alt="Van exterior profile">
+            <img src="images/van_fall.jpg" alt="Van in fall scenery">
+            
+            <!-- Kitchen and Interior -->
+            <img src="images/vankitchbuild.jpg" alt="Custom kitchen build">
+            <img src="images/vankitbiuld2.jpg" alt="Kitchen craftsmanship">
+            <img src="images/vandoor1.jpg" alt="Van door and storage">
+            
+            <!-- Systems and Features -->
+            <img src="images/elect_panel.jpg" alt="Professional electrical system">
+            <img src="images/van_shower.jpg" alt="Exterior shower setup">
+            <img src="images/vanrear1.jpg" alt="Rear storage view">
+            
+            <!-- Lifestyle and Adventure -->
+            <img src="images/vanhillsof.jpg" alt="Van in outdoor setting">
         </div>
 
         <h2>About This Van</h2>
         <p>2010 Mercedes Sprinter Extended (Dual Wheel 1-ton) with professional full camper conversion. This meticulously built van features premium components throughout, from its marine-grade water heater to its sophisticated electrical system. With only 70k miles, this turnkey adventure vehicle combines luxury comfort with practical functionality.</p>
-        
-        <p>The thoughtfully designed layout includes a queen-size bed platform, dual couches with seating for 4, and a pull-down table. The professional kitchen features a full-size stainless steel sink, butcher block counter, oven, and 4-burner stove. The van's garage area accommodates mountain bikes and includes a built-in air compressor for your adventures.</p>
 
         <div class="features">
             <div class="feature-card">
-                <h3>Specifications</h3>
+                <h3>Vehicle Specifications</h3>
                 <ul>
-                    <li>Year: [2010]</li>
-                    <li>Make: [MERCEDES SPRINTER 3500 EXT]</li>
-                    <li>Model: [3500 EXT]</li>
-                    <li>Mileage: [72000]</li>
-                    <li>Engine: [DIESEL]</li>
-                </ul>
-            </div>
-
-            <div class="feature-card">
-                <h3>Living Space</h3>
-                <ul>
-                    <li>Sleeping capacity: [3]</li>
-                    <li>Kitchen setup: [STOVE,4 BURNER STOVETOP]</li>
-                    <li>Storage space: [Details]</li>
-                    <li>Bathroom: [No, Details]</li>
+                    <li>2010 Mercedes Sprinter</li>
+                    <li>Extended/High Roof Model</li>
+                    <li>Dual Wheel 1-ton Version</li>
+                    <li>70,000 Miles</li>
+                    <li>Professional Conversion</li>
                 </ul>
             </div>
 
             <div class="feature-card">
                 <h3>Electrical System</h3>
                 <ul>
-                    <li>2000W inverter with professional wiring</li>
-                    <li>280Ah LiFePO4 battery system</li>
-                    <li>Solar power system</li>
-                    <li>Dual sub-panel AC/DC distribution</li>
-                    <li>Blue Sea auto charging relay with cockpit controls</li>
-                    <li>Full DC/USB power distribution</li>
+                    <li>2000W Inverter</li>
+                    <li>280Ah LiFePO4 Battery</li>
+                    <li>Solar Power System</li>
+                    <li>Dual Sub-panel AC/DC Distribution</li>
+                    <li>Blue Sea Auto Charging Relay</li>
                 </ul>
             </div>
+
             <div class="feature-card">
-                <h3>Comfort & Climate</h3>
+                <h3>Living Space</h3>
                 <ul>
-                    <li>Espar D4 diesel heater (20°F to 60°F in 10 min)</li>
-                    <li>Marine-grade electric/DC water heater</li>
-                    <li>Hot & cold exterior shower</li>
-                    <li>Interior fans with thermal control</li>
-                    <li>Premium window insulation with fold-up covers</li>
+                    <li>Queen Size Bed Platform</li>
+                    <li>Dual Couch Setup</li>
+                    <li>Seating for 4</li>
+                    <li>Pull-down Table</li>
+                    <li>Ample Storage Solutions</li>
                 </ul>
             </div>
+
             <div class="feature-card">
-                <h3>Entertainment & Audio</h3>
+                <h3>Kitchen & Utilities</h3>
                 <ul>
-                    <li>High-powered stereo system</li>
-                    <li>6 high-end speakers throughout</li>
-                    <li>2000W subwoofer</li>
-                    <li>Isolated power system from starter</li>
+                    <li>Full Kitchen with Oven</li>
+                    <li>4-top Burner</li>
+                    <li>Full-size Stainless Steel Sink</li>
+                    <li>Butcher Block Counter</li>
+                    <li>Marine-grade Water Heater</li>
                 </ul>
             </div>
-            <div class="feature-card">
-                <h3>Garage & Utility</h3>
-                <ul>
-                    <li>Full-size garage for mountain bikes</li>
-                    <li>Built-in high capacity air compressorCAPABLE OF REFILLING VAN TIRES AFTER AIRDOWN</li>
-                    <li>Lightweight aluminum Unistrut roof rack</li>
-                    <li>Perimeter lighting with interior controls</li>
-                </ul>
+        </div>
+
+        <div class="build-highlights">
+            <h2>Premium Features</h2>
+            <div class="highlight-grid">
+                <div class="highlight-item">
+                    <h3>Climate Control</h3>
+                    <p>Espar D4 diesel heater provides rapid heating (20°F to 60°F in ten minutes), with thermally controlled interior fans.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Audio System</h3>
+                    <p>High-powered stereo with 6 high-end speakers and 2000W subwoofer, featuring power separation from starting system.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Garage Features</h3>
+                    <p>Built-in high capacity air compressor, full-size garage for mountain bikes, and lightweight aluminum Unistrut roof rack.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Exterior Amenities</h3>
+                    <p>Hot & cold exterior shower, perimeter lighting with interior controls, and window insulation fold-up covers.</p>
+                </div>
             </div>
         </div>
 
         <div class="price-section">
-            <h2>Price: $[79,000]</h2>
-            <p>Location: [NEVADA CITY,CA]</p>
+            <h2>Price: $79,900</h2>
+            <p>Location: [Your Location]</p>
         </div>
 
         <div class="contact-section">
             <h2>Interested? Get in Touch!</h2>
-            <p>Email: [SIERRASWEETS1@GMAIL.com]</p>
-            <p>Phone: [530-725-7961 OR 530-559-4589]</p>
+            <p>Email: [your@email.com]</p>
+            <p>Phone: [your phone number]</p>
             <button onclick="window.location.href='mailto:[your@email.com]'">Send Email</button>
             
-        </div>class="qr-section">
+            <div class="qr-section">
                 <h3>Scan to view this listing</h3>
                 <div id="qr-code"></div>
             </div>
@@ -196,6 +265,9 @@
                     colorDark : "#2c3e50",
                     colorLight : "#ffffff",
                     correctLevel : QRCode.CorrectLevel.H
+                });
+            }
+        </script>
     </div>
 </body>
 </html>
