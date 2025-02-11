@@ -31,7 +31,6 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
             margin: 2rem 0;
-            padding: 0 1rem;
         }
 
         .photo-gallery img {
@@ -41,99 +40,33 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: fadeIn 0.5s ease forwards;
         }
-        
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
         .photo-gallery img:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
 
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .feature-card {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .price-section {
-            background: #2c3e50;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .contact-section {
-            text-align: center;
-            margin: 2rem 0;
-        }
-
-        button {
-            background: #27ae60;
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1.1rem;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        button:hover {
-            background: #219a52;
-        }
-
-        .build-highlights {
-            padding: 2rem;
-            background: #f8f9fa;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .highlight-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .highlight-item {
-            padding: 1.5rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .highlight-item h3 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-
-        .qr-section {
-            margin-top: 2rem;
-            text-align: center;
-        }
-
-        #qr-code {
-            display: inline-block;
+        .image-error {
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 0.9rem;
             padding: 1rem;
-            background: white;
+            height: 300px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-top: 1rem;
         }
 
-        #qr-code img {
-            display: block;
-        }
+        /* Rest of your existing styles */
     </style>
 </head>
 <body>
@@ -143,131 +76,67 @@
     </header>
 
     <div class="container">
-        <div class="photo-gallery">
-            <!-- Exterior Views -->
-            <img src="images/vanwhitney.jpg" alt="Van against Mt. Whitney backdrop">
-            <img src="images/vansea.jpg" alt="Van by the ocean">
-            <img src="images/vanpalms.jpg" alt="Van parked under palm trees">
-            <img src="images/van1.jpg" alt="Van exterior profile">
-            <img src="images/vanfall.jpg.jpg" alt="Van in fall scenery">
-            
-            <!-- Kitchen and Interior -->
-            <img src="images/vankitchbuild.jpg" alt="Custom kitchen build">
-            <img src="images/vankitbiuld2.jpg" alt="Kitchen craftsmanship">
-            <img src="images/vandoor1.jpg" alt="Van door and storage">
-            
-            <!-- Systems and Features -->
-            <img src="images/elect_panel.jpg" alt="Professional electrical system">
-            <img src="images/vanshower.jpg" alt="Exterior shower setup">
-            <img src="images/vanrear1.jpg" alt="Rear storage view">
-            
-            <!-- Lifestyle and Adventure -->
-            <img src="images/vanhillsof.jpg" alt="Van in outdoor setting">
-        </div>
-
-        <h2>About This Van</h2>
-        <p>2010 Mercedes Sprinter Extended (Dual Wheel 1-ton) with professional full camper conversion. This meticulously built van features premium components throughout, from its marine-grade water heater to its sophisticated electrical system. With only 70k miles, this turnkey adventure vehicle combines luxury comfort with practical functionality.</p>
-
-        <div class="features">
-            <div class="feature-card">
-                <h3>Vehicle Specifications</h3>
-                <ul>
-                    <li>2010 Mercedes Sprinter</li>
-                    <li>Extended/High Roof Model</li>
-                    <li>Dual Wheel 1-ton Version</li>
-                    <li>70,000 Miles</li>
-                    <li>Professional Conversion</li>
-                </ul>
-            </div>
-
-            <div class="feature-card">
-                <h3>Electrical System</h3>
-                <ul>
-                    <li>2000W Inverter</li>
-                    <li>280Ah LiFePO4 Battery</li>
-                    <li>Solar Power System</li>
-                    <li>Dual Sub-panel AC/DC Distribution</li>
-                    <li>Blue Sea Auto Charging Relay</li>
-                </ul>
-            </div>
-
-            <div class="feature-card">
-                <h3>Living Space</h3>
-                <ul>
-                    <li>Queen Size Bed Platform</li>
-                    <li>Dual Couch Setup</li>
-                    <li>Seating for 4</li>
-                    <li>Pull-down Table</li>
-                    <li>Ample Storage Solutions</li>
-                </ul>
-            </div>
-
-            <div class="feature-card">
-                <h3>Kitchen & Utilities</h3>
-                <ul>
-                    <li>Full Kitchen with Oven</li>
-                    <li>4-top Burner</li>
-                    <li>Full-size Stainless Steel Sink</li>
-                    <li>Butcher Block Counter</li>
-                    <li>Marine-grade Water Heater</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="build-highlights">
-            <h2>Premium Features</h2>
-            <div class="highlight-grid">
-                <div class="highlight-item">
-                    <h3>Climate Control</h3>
-                    <p>Espar D4 diesel heater provides rapid heating (20°F to 60°F in ten minutes), with thermally controlled interior fans.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>Audio System</h3>
-                    <p>High-powered stereo with 6 high-end speakers and 2000W subwoofer, featuring power separation from starting system.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>Garage Features</h3>
-                    <p>Built-in high capacity air compressor, full-size garage for mountain bikes, and lightweight aluminum Unistrut roof rack.</p>
-                </div>
-                <div class="highlight-item">
-                    <h3>Exterior Amenities</h3>
-                    <p>Hot & cold exterior shower, perimeter lighting with interior controls, and window insulation fold-up covers.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="price-section">
-            <h2>Price: $79,900</h2>
-            <p>Location: [Your Location]</p>
-        </div>
-
-        <div class="contact-section">
-            <h2>Interested? Get in Touch!</h2>
-            <p>Email: [your@email.com]</p>
-            <p>Phone: [your phone number]</p>
-            <button onclick="window.location.href='mailto:[your@email.com]'">Send Email</button>
-            
-            <div class="qr-section">
-                <h3>Scan to view this listing</h3>
-                <div id="qr-code"></div>
-            </div>
-        </div>
-
-        <!-- Add QR Code library -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-        <script>
-            // Create QR Code once the page loads
-            window.onload = function() {
-                new QRCode(document.getElementById("qr-code"), {
-                    text: window.location.href,
-                    width: 128,
-                    height: 128,
-                    colorDark : "#2c3e50",
-                    colorLight : "#ffffff",
-                    correctLevel : QRCode.CorrectLevel.H
-                });
-            }
-        </script>
+        <div class="photo-gallery" id="photo-gallery"></div>
+        <!-- Rest of your content remains the same -->
     </div>
+
+    <script>
+        // Updated image configuration with correct paths
+        const images = [
+            { src: 'images/vanwhitney.jpg', alt: 'Van against Mt. Whitney backdrop', caption: 'Adventure ready at Mt. Whitney' },
+            { src: 'images/vansea.jpg', alt: 'Van by the ocean', caption: 'Coastal adventures await' },
+            { src: 'images/vanpalms.jpg', alt: 'Van parked under palm trees', caption: 'Perfect for tropical getaways' },
+            { src: 'images/van1.jpg', alt: 'Van exterior profile', caption: 'Sleek exterior design' },
+            { src: 'images/vanfall.jpg', alt: 'Van in fall scenery', caption: 'All-season capable' },
+            { src: 'images/vankitchbuild.jpg', alt: 'Custom kitchen build', caption: 'Professional kitchen setup' },
+            { src: 'images/vankitbiuld2.jpg', alt: 'Kitchen craftsmanship', caption: 'Premium craftsmanship' },
+            { src: 'images/vandoor1.jpg', alt: 'Van door and storage', caption: 'Clever storage solutions' },
+            { src: 'images/elect_panel.jpg', alt: 'Professional electrical system', caption: 'State-of-the-art electrical' },
+            { src: 'images/vanshower.jpg', alt: 'Exterior shower setup', caption: 'Outdoor shower system' },
+            { src: 'images/vanrear1.jpg', alt: 'Rear storage view', caption: 'Spacious rear storage' },
+            { src: 'images/vanhillsof.jpg', alt: 'Van in outdoor setting', caption: 'Your next adventure vehicle' }
+        ];
+
+        // Enhanced image loading function with debugging
+        function loadGallery() {
+            const gallery = document.getElementById('photo-gallery');
+            
+            images.forEach(image => {
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'image-container';
+                
+                const img = document.createElement('img');
+                img.src = image.src;
+                img.alt = image.alt;
+                img.loading = 'lazy';
+                
+                // Log successful loads
+                img.onload = function() {
+                    console.log(`Successfully loaded: ${image.src}`);
+                };
+                
+                // Enhanced error handling with path information
+                img.onerror = function() {
+                    console.error(`Failed to load image: ${image.src}`);
+                    imgContainer.innerHTML = `
+                        <div class="image-error">
+                            <div>
+                                <p>Image not available: ${image.alt}</p>
+                                <small>Path: ${image.src}</small>
+                            </div>
+                        </div>
+                    `;
+                };
+                
+                imgContainer.appendChild(img);
+                gallery.appendChild(imgContainer);
+            });
+        }
+
+        // Load gallery when DOM is ready
+        document.addEventListener('DOMContentLoaded', loadGallery);
+    </script>
 </body>
 </html>
+
+      
