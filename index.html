@@ -66,7 +66,74 @@
             border-radius: 8px;
         }
 
-        /* Rest of your existing styles */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .price-section {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        button {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #219a52;
+        }
+
+        .build-highlights {
+            padding: 2rem;
+            background: #f8f9fa;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .highlight-item {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .highlight-item h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -77,7 +144,89 @@
 
     <div class="container">
         <div class="photo-gallery" id="photo-gallery"></div>
-        <!-- Rest of your content remains the same -->
+
+        <h2>About This Van</h2>
+        <p>2010 Mercedes Sprinter Extended (Dual Wheel 1-ton) with professional full camper conversion. This meticulously built van features premium components throughout, from its marine-grade water heater to its sophisticated electrical system. With only 70k miles, this turnkey adventure vehicle combines luxury comfort with practical functionality.</p>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>Vehicle Specifications</h3>
+                <ul>
+                    <li>2010 Mercedes Sprinter</li>
+                    <li>Extended/High Roof Model</li>
+                    <li>Dual Wheel 1-ton Version</li>
+                    <li>70,000 Miles</li>
+                    <li>Professional Conversion</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Electrical System</h3>
+                <ul>
+                    <li>2000W Inverter</li>
+                    <li>280Ah LiFePO4 Battery</li>
+                    <li>Solar Power System</li>
+                    <li>Dual Sub-panel AC/DC Distribution</li>
+                    <li>Blue Sea Auto Charging Relay</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Living Space</h3>
+                <ul>
+                    <li>Queen Size Bed Platform</li>
+                    <li>Dual Couch Setup</li>
+                    <li>Seating for 4</li>
+                    <li>Pull-down Table</li>
+                    <li>Ample Storage Solutions</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Kitchen & Utilities</h3>
+                <ul>
+                    <li>Full Kitchen with Oven</li>
+                    <li>4-top Burner</li>
+                    <li>Full-size Stainless Steel Sink</li>
+                    <li>Butcher Block Counter</li>
+                    <li>Marine-grade Water Heater</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="build-highlights">
+            <h2>Premium Features</h2>
+            <div class="highlight-grid">
+                <div class="highlight-item">
+                    <h3>Climate Control</h3>
+                    <p>Espar D4 diesel heater provides rapid heating (20°F to 60°F in ten minutes), with thermally controlled interior fans.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Audio System</h3>
+                    <p>High-powered stereo with 6 high-end speakers and 2000W subwoofer, featuring power separation from starting system.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Garage Features</h3>
+                    <p>Built-in high capacity air compressor, full-size garage for mountain bikes, and lightweight aluminum Unistrut roof rack.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Exterior Amenities</h3>
+                    <p>Hot & cold exterior shower, perimeter lighting with interior controls, and window insulation fold-up covers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="price-section">
+            <h2>Price: $75,000</h2>
+            <p>Location: [Nevada City,Ca.]</p>
+        </div>
+
+        <div class="contact-section">
+            <h2>Interested? Get in Touch!</h2>
+            <p>Email: [sierrasweets1@gmai.com]</p>
+            <p>Phone: [530-559-4589 or 530-725-9760]</p>
+            <button onclick="window.location.href='mailto:[your@email.com]'">Send Email</button>
+        </div>
     </div>
 
     <script>
@@ -138,5 +287,3 @@
     </script>
 </body>
 </html>
-
-      
