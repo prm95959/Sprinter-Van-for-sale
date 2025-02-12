@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://prm95959.github.io/Sprinter-Van-for-sale/</loc>
+        <lastmod>2025-02-11</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        
+        <!-- Main Exterior Image -->
+        <image:image>
+            <image:loc>https://prm95959.github.io/Sprinter-Van-for-sale/images/2010-mercedes-sprinter-exterior-main.jpg</image:loc>
+            <image:title>2010 Mercedes Sprinter Camper Van - Exterior View</image:title>
+            <image:caption>Professional Sprinter conversion with full camper build</image:caption>
+        </image:image>
+
+        <!-- Interior Kitchen Image -->
+        <image:image>
+            <image:loc>https://prm95959.github.io/Sprinter-Van-for-sale/images/sprinter-custom-kitchen-interior.jpg</image:loc>
+            <image:title>Custom Kitchen Build in Sprinter Van</image:title>
+            <image:caption>Professional kitchen setup with full amenities</image:caption>
+        </image:image>
+
+        <!-- Electrical System -->
+        <image:image>
+            <image:loc>https://prm95959.github.io/Sprinter-Van-for-sale/images/sprinter-electrical-system.jpg</image:loc>
+            <image:title>Professional Electrical System</image:title>
+            <image:caption>2000W Inverter with 280Ah LiFePO4 Battery System</image:caption>
+        </image:image>
+
+        <!-- Adventure Shots -->
+        <image:image>
+            <image:loc>https://prm95959.github.io/Sprinter-Van-for-sale/images/sprinter-van-mt-whitney-adventure.jpg</image:loc>
+            <image:title>Sprinter Van at Mt. Whitney</image:title>
+            <image:caption>Adventure-ready van in scenic location</image:caption>
+        </image:image>
+    </url>
+</urlset>
