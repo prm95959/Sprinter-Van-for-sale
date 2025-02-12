@@ -80,14 +80,65 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .price-section {
-            background: #2c3e50;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
+        <style>
+.price-section {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.price-content {
+    text-align: center;
+}
+
+.qr-code-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.qr-code-container img {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.qr-code-container p {
+    color: #2c3e50;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .price-section {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<!-- Updated HTML -->
+<div class="price-section">
+    <div class="price-content">
+        <h2>Price: $75,000</h2>
+        <p>Location: Nevada City, CA</p>
+    </div>
+    <div class="qr-code-container">
+        <img 
+            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://prm95959.github.io/Sprinter-Van-for-sale/" 
+            alt="QR Code to Van Listing"
+        />
+        <p>Scan for details</p>
+    </div>
+</div>
 
         .contact-section {
             text-align: center;
