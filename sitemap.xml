@@ -34,5 +34,42 @@
             <image:title>Sprinter Van at Mt. Whitney</image:title>
             <image:caption>Adventure-ready van in scenic location</image:caption>
         </image:image>
+
+           <!-- Additional Images -->
+        <image:image>
+            <image:loc>https://prm95959.github.io/Sprinter-Van-for-sale/images/sprinterextsideopenre.jpg</image:loc>
+            <image:title>Sprinter Van Side View with Open Door</image:title>
+            <image:caption>Side view showing accessible entry and storage</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://prm95959.github.io/Sprinter-Van-for-sale/images/sprinterrearcomprre.jpg</image:loc>
+            <image:title>Sprinter Van Rear View with Compressor</image:title>
+            <image:caption>Rear storage and built-in compressor system</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://prm95959.github.io/Sprinter-Van-for-sale/images/vanopensidere.jpg</image:loc>
+            <image:title>Van with Open Side Door</image:title>
+            <image:caption>Side access and interior view</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://prm95959.github.io/Sprinter-Van-for-sale/images/vansnowre.jpg</image:loc>
+            <image:title>Sprinter Van in Snow</image:title>
+            <image:caption>All-weather capability demonstration</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://prm95959.github.io/Sprinter-Van-for-sale/images/bedplatformre.jpg</image:loc>
+            <image:title>Bed Platform Setup</image:title>
+            <image:caption>Queen-size bed platform with storage</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://prm95959.github.io/Sprinter-Van-for-sale/images/compressorvanre.jpg</image:loc>
+            <image:title>Van Compressor System</image:title>
+            <image:caption>Built-in high capacity air compressor system</image:caption>
+        </image:image> 
     </url>
 </urlset>
